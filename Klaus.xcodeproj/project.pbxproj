@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400248AC199323D500BF6D61 /* ccvResources in Resources */ = {isa = PBXBuildFile; fileRef = 400248AB199323D500BF6D61 /* ccvResources */; };
+		400248B11993376900BF6D61 /* KLWordNetSynset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400248B01993376900BF6D61 /* KLWordNetSynset.swift */; };
+		400248B71993415100BF6D61 /* libccv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 400248B61993415100BF6D61 /* libccv.a */; };
+		400248B9199341B000BF6D61 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400248B8199341B000BF6D61 /* Accelerate.framework */; };
+		400248BB199341BE00BF6D61 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 400248BA199341BE00BF6D61 /* libsqlite3.dylib */; };
+		400248BE1993434700BF6D61 /* KLClassificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400248BD1993434700BF6D61 /* KLClassificationResult.swift */; };
+		4003D4C11993132D008965F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4003D4C01993132D008965F0 /* AppDelegate.swift */; };
+		4003D4C31993132D008965F0 /* KLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4003D4C21993132D008965F0 /* KLViewController.swift */; };
+		4003D4C81993132D008965F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4003D4C71993132D008965F0 /* Images.xcassets */; };
+		4003D4D41993132D008965F0 /* KlausTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4003D4D31993132D008965F0 /* KlausTests.swift */; };
+		4003D4DF19931E3D008965F0 /* KLHierarchicalClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4003D4DE19931E3D008965F0 /* KLHierarchicalClassifier.m */; };
+		40BD700B199345B8006A90ED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BD700A199345B8006A90ED /* AssetsLibrary.framework */; };
+		40BD700E1993480F006A90ED /* KLAssetsLibraryIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD700D1993480F006A90ED /* KLAssetsLibraryIndexer.m */; };
+		40BD7011199357B4006A90ED /* KLClassificationHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD7010199357B4006A90ED /* KLClassificationHierarchy.m */; };
+		40BD701519935ABC006A90ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BD701419935ABC006A90ED /* QuartzCore.framework */; };
+		40BD701819935EEF006A90ED /* KLTickCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD701719935EEF006A90ED /* KLTickCount.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4003D4CE1993132D008965F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4003D4B31993132D008965F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4003D4BA1993132D008965F0;
+			remoteInfo = Klaus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		400248AB199323D500BF6D61 /* ccvResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccvResources; path = ccv/ccvResources; sourceTree = SOURCE_ROOT; };
+		400248B01993376900BF6D61 /* KLWordNetSynset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLWordNetSynset.swift; sourceTree = "<group>"; };
+		400248B61993415100BF6D61 /* libccv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libccv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		400248B8199341B000BF6D61 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		400248BA199341BE00BF6D61 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		400248BD1993434700BF6D61 /* KLClassificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLClassificationResult.swift; sourceTree = "<group>"; };
+		4003D4BB1993132D008965F0 /* Klaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4003D4BF1993132D008965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4003D4C01993132D008965F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4003D4C21993132D008965F0 /* KLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLViewController.swift; sourceTree = "<group>"; };
+		4003D4C71993132D008965F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4003D4CD1993132D008965F0 /* KlausTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlausTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4003D4D21993132D008965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4003D4D31993132D008965F0 /* KlausTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlausTests.swift; sourceTree = "<group>"; };
+		4003D4DD19931E3D008965F0 /* Klaus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Klaus-Bridging-Header.h"; sourceTree = "<group>"; };
+		4003D4DE19931E3D008965F0 /* KLHierarchicalClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLHierarchicalClassifier.m; sourceTree = "<group>"; };
+		4003D4E019931E60008965F0 /* KLHierarchicalClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLHierarchicalClassifier.h; sourceTree = "<group>"; };
+		40BD700A199345B8006A90ED /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		40BD700C1993480F006A90ED /* KLAssetsLibraryIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAssetsLibraryIndexer.h; sourceTree = "<group>"; };
+		40BD700D1993480F006A90ED /* KLAssetsLibraryIndexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAssetsLibraryIndexer.m; sourceTree = "<group>"; };
+		40BD700F199357B4006A90ED /* KLClassificationHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLClassificationHierarchy.h; sourceTree = "<group>"; };
+		40BD7010199357B4006A90ED /* KLClassificationHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLClassificationHierarchy.m; sourceTree = "<group>"; };
+		40BD701419935ABC006A90ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40BD701619935EEF006A90ED /* KLTickCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTickCount.h; sourceTree = "<group>"; };
+		40BD701719935EEF006A90ED /* KLTickCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTickCount.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4003D4B81993132D008965F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BD701519935ABC006A90ED /* QuartzCore.framework in Frameworks */,
+				40BD700B199345B8006A90ED /* AssetsLibrary.framework in Frameworks */,
+				400248BB199341BE00BF6D61 /* libsqlite3.dylib in Frameworks */,
+				400248B9199341B000BF6D61 /* Accelerate.framework in Frameworks */,
+				400248B71993415100BF6D61 /* libccv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4003D4CA1993132D008965F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400248BC199341E600BF6D61 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				40BD701419935ABC006A90ED /* QuartzCore.framework */,
+				40BD700A199345B8006A90ED /* AssetsLibrary.framework */,
+				400248BA199341BE00BF6D61 /* libsqlite3.dylib */,
+				400248B8199341B000BF6D61 /* Accelerate.framework */,
+				400248B61993415100BF6D61 /* libccv.a */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		4003D4B21993132D008965F0 = {
+			isa = PBXGroup;
+			children = (
+				400248BC199341E600BF6D61 /* Framework */,
+				4003D4BD1993132D008965F0 /* Klaus */,
+				4003D4D01993132D008965F0 /* KlausTests */,
+				4003D4BC1993132D008965F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4003D4BC1993132D008965F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4003D4BB1993132D008965F0 /* Klaus.app */,
+				4003D4CD1993132D008965F0 /* KlausTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4003D4BD1993132D008965F0 /* Klaus */ = {
+			isa = PBXGroup;
+			children = (
+				4003D4C01993132D008965F0 /* AppDelegate.swift */,
+				4003D4C21993132D008965F0 /* KLViewController.swift */,
+				400248B01993376900BF6D61 /* KLWordNetSynset.swift */,
+				400248BD1993434700BF6D61 /* KLClassificationResult.swift */,
+				40BD700F199357B4006A90ED /* KLClassificationHierarchy.h */,
+				40BD7010199357B4006A90ED /* KLClassificationHierarchy.m */,
+				4003D4E019931E60008965F0 /* KLHierarchicalClassifier.h */,
+				4003D4DE19931E3D008965F0 /* KLHierarchicalClassifier.m */,
+				40BD700C1993480F006A90ED /* KLAssetsLibraryIndexer.h */,
+				40BD700D1993480F006A90ED /* KLAssetsLibraryIndexer.m */,
+				40BD701619935EEF006A90ED /* KLTickCount.h */,
+				40BD701719935EEF006A90ED /* KLTickCount.m */,
+				4003D4DD19931E3D008965F0 /* Klaus-Bridging-Header.h */,
+				4003D4C71993132D008965F0 /* Images.xcassets */,
+				4003D4BE1993132D008965F0 /* Supporting Files */,
+			);
+			path = Klaus;
+			sourceTree = "<group>";
+		};
+		4003D4BE1993132D008965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				400248AB199323D500BF6D61 /* ccvResources */,
+				4003D4BF1993132D008965F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4003D4D01993132D008965F0 /* KlausTests */ = {
+			isa = PBXGroup;
+			children = (
+				4003D4D31993132D008965F0 /* KlausTests.swift */,
+				4003D4D11993132D008965F0 /* Supporting Files */,
+			);
+			path = KlausTests;
+			sourceTree = "<group>";
+		};
+		4003D4D11993132D008965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4003D4D21993132D008965F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4003D4BA1993132D008965F0 /* Klaus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4003D4D71993132D008965F0 /* Build configuration list for PBXNativeTarget "Klaus" */;
+			buildPhases = (
+				4003D4B71993132D008965F0 /* Sources */,
+				4003D4B81993132D008965F0 /* Frameworks */,
+				4003D4B91993132D008965F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klaus;
+			productName = Klaus;
+			productReference = 4003D4BB1993132D008965F0 /* Klaus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4003D4CC1993132D008965F0 /* KlausTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4003D4DA1993132D008965F0 /* Build configuration list for PBXNativeTarget "KlausTests" */;
+			buildPhases = (
+				4003D4C91993132D008965F0 /* Sources */,
+				4003D4CA1993132D008965F0 /* Frameworks */,
+				4003D4CB1993132D008965F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4003D4CF1993132D008965F0 /* PBXTargetDependency */,
+			);
+			name = KlausTests;
+			productName = KlausTests;
+			productReference = 4003D4CD1993132D008965F0 /* KlausTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4003D4B31993132D008965F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KL;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Klaus;
+				TargetAttributes = {
+					4003D4BA1993132D008965F0 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					4003D4CC1993132D008965F0 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 4003D4BA1993132D008965F0;
+					};
+				};
+			};
+			buildConfigurationList = 4003D4B61993132D008965F0 /* Build configuration list for PBXProject "Klaus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4003D4B21993132D008965F0;
+			productRefGroup = 4003D4BC1993132D008965F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4003D4BA1993132D008965F0 /* Klaus */,
+				4003D4CC1993132D008965F0 /* KlausTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4003D4B91993132D008965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4003D4C81993132D008965F0 /* Images.xcassets in Resources */,
+				400248AC199323D500BF6D61 /* ccvResources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4003D4CB1993132D008965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4003D4B71993132D008965F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BD7011199357B4006A90ED /* KLClassificationHierarchy.m in Sources */,
+				4003D4C31993132D008965F0 /* KLViewController.swift in Sources */,
+				40BD700E1993480F006A90ED /* KLAssetsLibraryIndexer.m in Sources */,
+				40BD701819935EEF006A90ED /* KLTickCount.m in Sources */,
+				400248BE1993434700BF6D61 /* KLClassificationResult.swift in Sources */,
+				4003D4DF19931E3D008965F0 /* KLHierarchicalClassifier.m in Sources */,
+				400248B11993376900BF6D61 /* KLWordNetSynset.swift in Sources */,
+				4003D4C11993132D008965F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4003D4C91993132D008965F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4003D4D41993132D008965F0 /* KlausTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4003D4CF1993132D008965F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4003D4BA1993132D008965F0 /* Klaus */;
+			targetProxy = 4003D4CE1993132D008965F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4003D4D51993132D008965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4003D4D61993132D008965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4003D4D81993132D008965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/Headers",
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				INFOPLIST_FILE = Klaus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/Klaus/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Klaus/Klaus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4003D4D91993132D008965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/Headers",
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				INFOPLIST_FILE = Klaus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/Klaus/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Klaus/Klaus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		4003D4DB1993132D008965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KlausTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klaus.app/Klaus";
+			};
+			name = Debug;
+		};
+		4003D4DC1993132D008965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KlausTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klaus.app/Klaus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4003D4B61993132D008965F0 /* Build configuration list for PBXProject "Klaus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4003D4D51993132D008965F0 /* Debug */,
+				4003D4D61993132D008965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4003D4D71993132D008965F0 /* Build configuration list for PBXNativeTarget "Klaus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4003D4D81993132D008965F0 /* Debug */,
+				4003D4D91993132D008965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4003D4DA1993132D008965F0 /* Build configuration list for PBXNativeTarget "KlausTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4003D4DB1993132D008965F0 /* Debug */,
+				4003D4DC1993132D008965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4003D4B31993132D008965F0 /* Project object */;
+}

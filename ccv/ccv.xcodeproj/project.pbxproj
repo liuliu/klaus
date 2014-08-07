@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7A30F0400416D6800000000 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2900416D6800000000 /* kiss_fft.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F04035A1D4000000000 /* ccv_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD70E29035A1D4000000000 /* ccv_internal.h */; };
+		E7A30F0405A1D89000000000 /* ccv.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD70E2905A1D89000000000 /* ccv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7A30F04076AF0BF00000000 /* ccv_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29076AF0BF00000000 /* ccv_memory.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F0407ED38D400000000 /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2907ED38D400000000 /* kiss_fftr.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F0411258DCE00000000 /* ccv_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2911258DCE00000000 /* ccv_cache.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F04129CBE5100000000 /* ccv_mser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29129CBE5100000000 /* ccv_mser.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F041C4D62E200000000 /* ccv_sift.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E291C4D62E200000000 /* ccv_sift.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F041FA5F01B00000000 /* ccv_resample.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E291FA5F01B00000000 /* ccv_resample.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F04205355C000000000 /* ccv_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29205355C000000000 /* ccv_util.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F043145AFB400000000 /* kissf_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E293145AFB400000000 /* kissf_fftndr.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F043B90101300000000 /* dSFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E293B90101300000000 /* dSFMT.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F044665A13E00000000 /* ccv_daisy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E294665A13E00000000 /* ccv_daisy.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F0459D315EA00000000 /* kissf_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2959D315EA00000000 /* kissf_fftr.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F046AAA44B500000000 /* ccv_convnet.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E296AAA44B500000000 /* ccv_convnet.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F046CC1B3B800000000 /* ccv_transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E296CC1B3B800000000 /* ccv_transform.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F046E40959200000000 /* kissf_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E296E40959200000000 /* kissf_fft.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F046FE5382400000000 /* ccv_io.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E296FE5382400000000 /* ccv_io.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F047A8C663400000000 /* ccv_algebra.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E297A8C663400000000 /* ccv_algebra.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F047E7F391E00000000 /* ccv_classic.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E297E7F391E00000000 /* ccv_classic.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F0481B8EBF500000000 /* ccv_sparse_coding.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2981B8EBF500000000 /* ccv_sparse_coding.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F048C5A0B3200000000 /* ccv_bbf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E298C5A0B3200000000 /* ccv_bbf.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F048C7CB1AD00000000 /* ccv_dpm.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E298C7CB1AD00000000 /* ccv_dpm.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F048CBD241800000000 /* ccv_icf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E298CBD241800000000 /* ccv_icf.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F048D535B1C00000000 /* ccv_swt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E298D535B1C00000000 /* ccv_swt.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F048D5C367800000000 /* ccv_tld.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E298D5C367800000000 /* ccv_tld.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F0491A0EAAF00000000 /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2991A0EAAF00000000 /* SFMT.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F04A32586E100000000 /* ccv_extra.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD70E29A32586E100000000 /* ccv_extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7A30F04A32586E600000000 /* ccv_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29A32586E600000000 /* ccv_extra.m */; };
+		E7A30F04B781F16400000000 /* ccv_ferns.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29B781F16400000000 /* ccv_ferns.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F04C162C01E00000000 /* kiss_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29C162C01E00000000 /* kiss_fftndr.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F04CA23B1BA00000000 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29CA23B1BA00000000 /* sha1.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F04DD21377A00000000 /* ccv_basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29DD21377A00000000 /* ccv_basic.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F04E08E9A8800000000 /* kissf_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29E08E9A8800000000 /* kissf_fftnd.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+		E7A30F04E73368D900000000 /* ccv_numeric.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29E73368D900000000 /* ccv_numeric.c */; settings = {COMPILER_FLAGS = "-O3 -mfpu=neon -ffast-math -D HAVE_ACCELERATE_FRAMEWORK -D USE_DISPATCH -D HAVE_NEON"; }; };
+		E7A30F04F5B8D4DE00000000 /* kiss_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29F5B8D4DE00000000 /* kiss_fftnd.c */; settings = {COMPILER_FLAGS = "-O3 -ffast-math"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD70E2900416D6800000000 /* kiss_fft.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kiss_fft.c; path = ccv/3rdparty/kissfft/kiss_fft.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29035A1D4000000000 /* ccv_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = ccv_internal.h; path = ccv/ccv_internal.h; sourceTree = SOURCE_ROOT; };
+		1DD70E2905A1D89000000000 /* ccv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = ccv.h; path = ccv/ccv.h; sourceTree = SOURCE_ROOT; };
+		1DD70E29076AF0BF00000000 /* ccv_memory.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_memory.c; path = ccv/ccv_memory.c; sourceTree = SOURCE_ROOT; };
+		1DD70E2907ED38D400000000 /* kiss_fftr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kiss_fftr.c; path = ccv/3rdparty/kissfft/kiss_fftr.c; sourceTree = SOURCE_ROOT; };
+		1DD70E2911258DCE00000000 /* ccv_cache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_cache.c; path = ccv/ccv_cache.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29129CBE5100000000 /* ccv_mser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_mser.c; path = ccv/ccv_mser.c; sourceTree = SOURCE_ROOT; };
+		1DD70E291C4D62E200000000 /* ccv_sift.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_sift.c; path = ccv/ccv_sift.c; sourceTree = SOURCE_ROOT; };
+		1DD70E291FA5F01B00000000 /* ccv_resample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_resample.c; path = ccv/ccv_resample.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29205355C000000000 /* ccv_util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_util.c; path = ccv/ccv_util.c; sourceTree = SOURCE_ROOT; };
+		1DD70E293145AFB400000000 /* kissf_fftndr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kissf_fftndr.c; path = ccv/3rdparty/kissfft/kissf_fftndr.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29324A012400000000 /* libccv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libccv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E293B90101300000000 /* dSFMT.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = dSFMT.c; path = ccv/3rdparty/dsfmt/dSFMT.c; sourceTree = SOURCE_ROOT; };
+		1DD70E294665A13E00000000 /* ccv_daisy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_daisy.c; path = ccv/ccv_daisy.c; sourceTree = SOURCE_ROOT; };
+		1DD70E2959D315EA00000000 /* kissf_fftr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kissf_fftr.c; path = ccv/3rdparty/kissfft/kissf_fftr.c; sourceTree = SOURCE_ROOT; };
+		1DD70E296AAA44B500000000 /* ccv_convnet.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_convnet.c; path = ccv/ccv_convnet.c; sourceTree = SOURCE_ROOT; };
+		1DD70E296CC1B3B800000000 /* ccv_transform.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_transform.c; path = ccv/ccv_transform.c; sourceTree = SOURCE_ROOT; };
+		1DD70E296E40959200000000 /* kissf_fft.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kissf_fft.c; path = ccv/3rdparty/kissfft/kissf_fft.c; sourceTree = SOURCE_ROOT; };
+		1DD70E296FE5382400000000 /* ccv_io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_io.c; path = ccv/ccv_io.c; sourceTree = SOURCE_ROOT; };
+		1DD70E297A8C663400000000 /* ccv_algebra.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_algebra.c; path = ccv/ccv_algebra.c; sourceTree = SOURCE_ROOT; };
+		1DD70E297E7F391E00000000 /* ccv_classic.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_classic.c; path = ccv/ccv_classic.c; sourceTree = SOURCE_ROOT; };
+		1DD70E2981B8EBF500000000 /* ccv_sparse_coding.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_sparse_coding.c; path = ccv/ccv_sparse_coding.c; sourceTree = SOURCE_ROOT; };
+		1DD70E298C5A0B3200000000 /* ccv_bbf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_bbf.c; path = ccv/ccv_bbf.c; sourceTree = SOURCE_ROOT; };
+		1DD70E298C7CB1AD00000000 /* ccv_dpm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_dpm.c; path = ccv/ccv_dpm.c; sourceTree = SOURCE_ROOT; };
+		1DD70E298CBD241800000000 /* ccv_icf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_icf.c; path = ccv/ccv_icf.c; sourceTree = SOURCE_ROOT; };
+		1DD70E298D535B1C00000000 /* ccv_swt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_swt.c; path = ccv/ccv_swt.c; sourceTree = SOURCE_ROOT; };
+		1DD70E298D5C367800000000 /* ccv_tld.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_tld.c; path = ccv/ccv_tld.c; sourceTree = SOURCE_ROOT; };
+		1DD70E2991A0EAAF00000000 /* SFMT.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = SFMT.c; path = ccv/3rdparty/sfmt/SFMT.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29A32586E100000000 /* ccv_extra.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = ccv_extra.h; path = ccv/ccv_extra.h; sourceTree = SOURCE_ROOT; };
+		1DD70E29A32586E600000000 /* ccv_extra.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; name = ccv_extra.m; path = ccv/ccv_extra.m; sourceTree = SOURCE_ROOT; };
+		1DD70E29B781F16400000000 /* ccv_ferns.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_ferns.c; path = ccv/ccv_ferns.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29C162C01E00000000 /* kiss_fftndr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kiss_fftndr.c; path = ccv/3rdparty/kissfft/kiss_fftndr.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29CA23B1BA00000000 /* sha1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = sha1.c; path = ccv/3rdparty/sha1/sha1.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29DD21377A00000000 /* ccv_basic.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_basic.c; path = ccv/ccv_basic.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29E08E9A8800000000 /* kissf_fftnd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kissf_fftnd.c; path = ccv/3rdparty/kissfft/kissf_fftnd.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29E73368D900000000 /* ccv_numeric.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = ccv_numeric.c; path = ccv/ccv_numeric.c; sourceTree = SOURCE_ROOT; };
+		1DD70E29F5B8D4DE00000000 /* kiss_fftnd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; name = kiss_fftnd.c; path = ccv/3rdparty/kissfft/kiss_fftnd.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B401C9790001801600000000 /* ccv */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979EAB5339800000000 /* Sources */,
+			);
+			name = ccv;
+			sourceTree = "<group>";
+		};
+		B401C9790035D33A00000000 /* sfmt */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2991A0EAAF00000000 /* SFMT.c */,
+			);
+			name = sfmt;
+			sourceTree = "<group>";
+		};
+		B401C9790035D90500000000 /* sha1 */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29CA23B1BA00000000 /* sha1.c */,
+			);
+			name = sha1;
+			sourceTree = "<group>";
+		};
+		B401C97905B7019E00000000 /* dsfmt */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E293B90101300000000 /* dSFMT.c */,
+			);
+			name = dsfmt;
+			sourceTree = "<group>";
+		};
+		B401C979C806358400000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29324A012400000000 /* libccv.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C979D5F1FEB600000000 /* kissfft */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2900416D6800000000 /* kiss_fft.c */,
+				1DD70E29F5B8D4DE00000000 /* kiss_fftnd.c */,
+				1DD70E29C162C01E00000000 /* kiss_fftndr.c */,
+				1DD70E2907ED38D400000000 /* kiss_fftr.c */,
+				1DD70E296E40959200000000 /* kissf_fft.c */,
+				1DD70E29E08E9A8800000000 /* kissf_fftnd.c */,
+				1DD70E293145AFB400000000 /* kissf_fftndr.c */,
+				1DD70E2959D315EA00000000 /* kissf_fftr.c */,
+			);
+			name = kissfft;
+			sourceTree = "<group>";
+		};
+		B401C979EAB5339800000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979F15F0C6100000000 /* 3rdparty */,
+				1DD70E2905A1D89000000000 /* ccv.h */,
+				1DD70E297A8C663400000000 /* ccv_algebra.c */,
+				1DD70E29DD21377A00000000 /* ccv_basic.c */,
+				1DD70E298C5A0B3200000000 /* ccv_bbf.c */,
+				1DD70E2911258DCE00000000 /* ccv_cache.c */,
+				1DD70E297E7F391E00000000 /* ccv_classic.c */,
+				1DD70E296AAA44B500000000 /* ccv_convnet.c */,
+				1DD70E294665A13E00000000 /* ccv_daisy.c */,
+				1DD70E298C7CB1AD00000000 /* ccv_dpm.c */,
+				1DD70E29A32586E100000000 /* ccv_extra.h */,
+				1DD70E29A32586E600000000 /* ccv_extra.m */,
+				1DD70E29B781F16400000000 /* ccv_ferns.c */,
+				1DD70E298CBD241800000000 /* ccv_icf.c */,
+				1DD70E29035A1D4000000000 /* ccv_internal.h */,
+				1DD70E296FE5382400000000 /* ccv_io.c */,
+				1DD70E29076AF0BF00000000 /* ccv_memory.c */,
+				1DD70E29129CBE5100000000 /* ccv_mser.c */,
+				1DD70E29E73368D900000000 /* ccv_numeric.c */,
+				1DD70E291FA5F01B00000000 /* ccv_resample.c */,
+				1DD70E291C4D62E200000000 /* ccv_sift.c */,
+				1DD70E2981B8EBF500000000 /* ccv_sparse_coding.c */,
+				1DD70E298D535B1C00000000 /* ccv_swt.c */,
+				1DD70E298D5C367800000000 /* ccv_tld.c */,
+				1DD70E296CC1B3B800000000 /* ccv_transform.c */,
+				1DD70E29205355C000000000 /* ccv_util.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B401C979EFB6AC4600000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979C806358400000000 /* Products */,
+				B401C9790001801600000000 /* ccv */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+		B401C979F15F0C6100000000 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				B401C97905B7019E00000000 /* dsfmt */,
+				B401C979D5F1FEB600000000 /* kissfft */,
+				B401C9790035D33A00000000 /* sfmt */,
+				B401C9790035D90500000000 /* sha1 */,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3376FCD0000000000000000 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 0;
+			files = (
+				E7A30F0405A1D89000000000 /* ccv.h in Headers */,
+				E7A30F04A32586E100000000 /* ccv_extra.h in Headers */,
+				E7A30F04035A1D4000000000 /* ccv_internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04E0001801600000000 /* ccv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXNativeTarget "ccv" */;
+			buildPhases = (
+				1870857F0000000000000000 /* Sources */,
+				B3376FCD0000000000000000 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ccv;
+			productName = ccv;
+			productReference = 1DD70E29324A012400000000 /* libccv.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C847930001801600000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 218C37090000000000000002 /* Build configuration list for PBXProject "ccv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B401C979EFB6AC4600000000 /* mainGroup */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66DC04E0001801600000000 /* ccv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				E7A30F043B90101300000000 /* dSFMT.c in Sources */,
+				E7A30F0400416D6800000000 /* kiss_fft.c in Sources */,
+				E7A30F04F5B8D4DE00000000 /* kiss_fftnd.c in Sources */,
+				E7A30F04C162C01E00000000 /* kiss_fftndr.c in Sources */,
+				E7A30F0407ED38D400000000 /* kiss_fftr.c in Sources */,
+				E7A30F046E40959200000000 /* kissf_fft.c in Sources */,
+				E7A30F04E08E9A8800000000 /* kissf_fftnd.c in Sources */,
+				E7A30F043145AFB400000000 /* kissf_fftndr.c in Sources */,
+				E7A30F0459D315EA00000000 /* kissf_fftr.c in Sources */,
+				E7A30F0491A0EAAF00000000 /* SFMT.c in Sources */,
+				E7A30F04CA23B1BA00000000 /* sha1.c in Sources */,
+				E7A30F047A8C663400000000 /* ccv_algebra.c in Sources */,
+				E7A30F04DD21377A00000000 /* ccv_basic.c in Sources */,
+				E7A30F048C5A0B3200000000 /* ccv_bbf.c in Sources */,
+				E7A30F0411258DCE00000000 /* ccv_cache.c in Sources */,
+				E7A30F047E7F391E00000000 /* ccv_classic.c in Sources */,
+				E7A30F046AAA44B500000000 /* ccv_convnet.c in Sources */,
+				E7A30F044665A13E00000000 /* ccv_daisy.c in Sources */,
+				E7A30F048C7CB1AD00000000 /* ccv_dpm.c in Sources */,
+				E7A30F04A32586E600000000 /* ccv_extra.m in Sources */,
+				E7A30F04B781F16400000000 /* ccv_ferns.c in Sources */,
+				E7A30F048CBD241800000000 /* ccv_icf.c in Sources */,
+				E7A30F046FE5382400000000 /* ccv_io.c in Sources */,
+				E7A30F04076AF0BF00000000 /* ccv_memory.c in Sources */,
+				E7A30F04129CBE5100000000 /* ccv_mser.c in Sources */,
+				E7A30F04E73368D900000000 /* ccv_numeric.c in Sources */,
+				E7A30F041FA5F01B00000000 /* ccv_resample.c in Sources */,
+				E7A30F041C4D62E200000000 /* ccv_sift.c in Sources */,
+				E7A30F0481B8EBF500000000 /* ccv_sparse_coding.c in Sources */,
+				E7A30F048D535B1C00000000 /* ccv_swt.c in Sources */,
+				E7A30F048D5C367800000000 /* ccv_tld.c in Sources */,
+				E7A30F046CC1B3B800000000 /* ccv_transform.c in Sources */,
+				E7A30F04205355C000000000 /* ccv_util.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4952437300214BC300000001 /* GCOV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/$TARGET_NAME;
+				SDKROOT = iphoneos;
+				TARGET_NAME = ccv;
+			};
+			name = GCOV;
+		};
+		4952437300214BC300000002 /* GCOV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = ccv;
+				SDKROOT = iphoneos;
+			};
+			name = GCOV;
+		};
+		4952437303EDA63300000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/$TARGET_NAME;
+				SDKROOT = iphoneos;
+				TARGET_NAME = ccv;
+			};
+			name = Debug;
+		};
+		4952437303EDA63300000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ccv;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4952437350C7218900000001 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/$TARGET_NAME;
+				SDKROOT = iphoneos;
+				TARGET_NAME = ccv;
+			};
+			name = Profile;
+		};
+		4952437350C7218900000002 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = ccv;
+				SDKROOT = iphoneos;
+			};
+			name = Profile;
+		};
+		49524373A439BFE700000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/$TARGET_NAME;
+				SDKROOT = iphoneos;
+				TARGET_NAME = ccv;
+			};
+			name = Release;
+		};
+		49524373A439BFE700000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = ccv;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000001 /* Build configuration list for PBXNativeTarget "ccv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000001 /* Debug */,
+				4952437300214BC300000001 /* GCOV */,
+				4952437350C7218900000001 /* Profile */,
+				49524373A439BFE700000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000002 /* Build configuration list for PBXProject "ccv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000002 /* Debug */,
+				4952437300214BC300000002 /* GCOV */,
+				4952437350C7218900000002 /* Profile */,
+				49524373A439BFE700000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C847930001801600000000 /* Project object */;
+}
