@@ -1,4 +1,5 @@
-klaus
+Klaus
 =====
 
-A state-of-the-art Classifier on iOS
+This is a demo to show how to run a state-of-the-art image classifier from mobile device.
+
