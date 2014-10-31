@@ -53,6 +53,7 @@
   ccv_array_t *ranks = 0;
   ccv_convnet_classify(_convnet, &classiable, 1, &ranks, 5, 1);
   ccv_matrix_free(classiable);
+  ccv_matrix_free(a);
   // collect classification result
   NSMutableArray *classifications = [NSMutableArray array];
   int i;
